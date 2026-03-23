@@ -114,7 +114,6 @@ while True:
         hash_interno = gerar_hash_arquivo(arquivo_esconder)
         logging.info(f"INICIANDO ESTEGANOGRAFIA - HASH ARQUIVO ORIGINAL: {hash_interno}")
         
-<<<<<<< HEAD
         start_esteg = time.perf_counter()
         imagem_final = ocultar_arquivo_em_imagem(img_origem, arquivo_esconder)
         end_esteg = time.perf_counter()
@@ -122,17 +121,14 @@ while True:
         
         print(f"Sucesso! Arquivo ocultado em: {imagem_final}")
         logging.info(f"ESTEGANOGRAFIA CONCLUIDA: {imagem_final} | Tempo de execucao {t_esteg:.6f} s")
-=======
         imagem_final = ocultar_arquivo_em_imagem(img_origem, arquivo_esconder)
         
         print(f"Sucesso! Arquivo ocultado em: {imagem_final}")
         logging.info(f"ESTEGANOGRAFIA CONCLUIDA: {imagem_final}")
->>>>>>> bf78365630040db905b58545bd8ad1a4a613ed2d
 
     elif opcao == "8":
         img_secreta = input("Caminho da imagem secreta: ")
         
-<<<<<<< HEAD
         start_rev = time.perf_counter()
         arquivo_extraido = revelar_arquivo_de_imagem(img_secreta)
         end_rev = time.perf_counter()
@@ -140,12 +136,10 @@ while True:
         
         print(f"Arquivo extraído com sucesso: {arquivo_extraido}")
         logging.info(f"ARQUIVO EXTRAIDO DA IMAGEM: {arquivo_extraido} | Tempo de execucao {t_rev:.6f} s")
-=======
         arquivo_extraido = revelar_arquivo_de_imagem(img_secreta)
         
         print(f"Arquivo extraído com sucesso: {arquivo_extraido}")
         logging.info(f"ARQUIVO EXTRAIDO DA IMAGEM: {arquivo_extraido}")
->>>>>>> bf78365630040db905b58545bd8ad1a4a613ed2d
         
         hash_extraido = gerar_hash_arquivo(arquivo_extraido)
         print(f"Hash do arquivo extraído: {hash_extraido}")
