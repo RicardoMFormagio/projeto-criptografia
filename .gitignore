@@ -32,3 +32,6 @@ env/
 
 .mp4
 .mov
+media/video_150mb.mp4
+media/video_25mb.mp4
+media/video_500mb.mov
