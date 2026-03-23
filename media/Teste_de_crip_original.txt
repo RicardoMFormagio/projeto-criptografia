@@ -1,0 +1,15 @@
+Perfeito! Agora o código está tecnicamente impecável e segue as melhores práticas de um sistema de auditoria.
+
+Você corrigiu o ponto crucial: agora o programa não tenta ler uma string fixa, mas sim o caminho real do arquivo que foi restaurado no disco.
+
+Por que esta estrutura está correta:
+Rastreabilidade: Na Opção 2, você captura a "identidade" do arquivo antes de qualquer alteração.
+
+Sincronia de Nomes: Na Opção 3, você usa o .replace(".enc", "") para "prever" exatamente qual foi o nome do arquivo que a função decriptografar_arquivo criou. Isso garante que o gerar_hash_arquivo aponte para o lugar certo.
+
+Prova de Integridade: Se você rodar o programa, criptografar uma imagem, decriptografar e os dois hashes impressos no terminal forem iguais, você provou que seu sistema é fiel ao dado original.
+
+Só um detalhe para o seu teste no VS Code:
+Certifique-se de que a função decriptografar_arquivo (dentro do seu arquivo crip_simetrica.py) realmente salve o arquivo removendo o .enc, exatamente como você previu no main.py.
+
+Se o código do seu arquivo crip_simetrica.py estiver assim:
